@@ -10,34 +10,7 @@
     
 </head>
 <body>
-    <div id="email-form" class="email-form_wrp">
-            <div class="container">
-        
-                    <div class="email-form">
-        
-                            <h3 class="email-form_title m-title">
-                                Отправить сообщение
-                            </h3>
-                            <form action="" class="email-form_content">
-                                <div class="email-forn_contant_name">
-                                    <label for="">Ваш E-mail</label>
-                                    <input type="email">
-                                </div>
-                                <div class="email-forn_contant_name">
-                                        <label for="">Введите сообщение</label>
-                                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                                </div>
-                                    <button class="m-btn email-form_btn">Отправить</button>
-                                
-                            </form>
-                    </div>
-
-                    <div class="btn_close">
-                        <div class="btn_close_left"></div>
-                        <div class="btn_close_right"></div>
-                    </div>
-            </div>
-    </div>
+    
   
 
        
@@ -88,14 +61,22 @@
                    <div class="pay-form_img">
                        <img src="img/visa_mc.png" alt="visa">
                    </div>
-                   <form action="" class="pay">
+                   <form action="https://test-telega.piastrix24.com/api/get_data" class="pay" method="POST" id="ajax_form">
                        <div class="pay_input">
                             <label for="">Ваш E-mail</label>
-                            <input type="email">
+                            <input type="email" name="email" enctype="multipart/form-data">
                        </div>
                        
-                       <button class="m-btn">Оплатить</button>
+                       <button class="m-btn" id="btn">Оплатить</button>
                    </form>
+
+                   <div id="result_form">
+                        <form action="https://pay.piastrix.com/ru/pay" method="POST" id="submit" class="ajax-form">
+                            
+                        </form>
+                   </div>
+
+
                </div>
         </div>
      
@@ -112,5 +93,6 @@
     </footer>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="common.js"></script>
+    <script src="Ajax.js"></script>
 </body>
 </html>
