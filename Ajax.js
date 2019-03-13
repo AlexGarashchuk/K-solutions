@@ -18,14 +18,13 @@ function sendAjaxForm(result_form, ajax_form, url) {
         	let result = $.parseJSON(response);
             $('#result_form').html(
             '<form class="pay-ready" action="https://test-telega.piastrix24.com/api/get_data"> '+
-
-                '<p>Name</p><input type="text" velue="result" name="amount">'+
-                '<input type="text" velue="result.currency">'+
-                '<input type="text" velue="result.description">'+
-                '<input type="text" velue="result.payway">'+
-                '<input type="text" velue="result.shop_id">'+
-                '<input type="text" velue="result.shop_order_id">'+
-                '<input type="text" velue="result.sign">'+
+                'Amount: <input type="number" value="'+result.amount+'" name="amount">'+
+                'Currency: <input type="text" value="'+result.currency+'">'+
+                'Description: <input type="text" value="'+result.description+'">'+
+                'Payway: <input type="text" value="'+result.payway+'">'+
+                '<input type="hidden" value="'+result.shop_id+'">'+
+                '<input type="hidden" value="'+result.shop_order_id+'">'+
+                '<input type="hidden" vlue="'+result.sign+'">'+
                 '<button class="m-btn" onclick="func();" href="#">Отправить</button>'+
             '</form>'
             );
