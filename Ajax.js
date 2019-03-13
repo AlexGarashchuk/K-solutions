@@ -38,5 +38,5 @@ function sendAjaxForm(result_form, ajax_form, url) {
 
 function func() {
     console.log('я делаю редирект');
-    document.location.href = 'https://www.paypal.com/ua/home'
+    document.location.href = 'https://pay.piastrix.com/ru/pay'
   }
