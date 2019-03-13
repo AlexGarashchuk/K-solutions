@@ -248,10 +248,19 @@ align-items: center;
     align-items: center;
 }
 
+@media(max-width: 680px){
+    .pay-form{
+        grid-template-columns: 1fr;
+    }
+}
+.pay-form_img{
+    text-align: center;
+}
 
 .pay-form_img img{
     width: 100%;
     max-width: 200px;
+    
 }
 
 .pay{
