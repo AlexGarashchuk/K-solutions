@@ -61,10 +61,10 @@
                    <div class="pay-form_img">
                        <img src="img/visa_mc.png" alt="visa">
                    </div>
-                   <form action="https://test-telega.piastrix24.com/api/get_data" class="pay" method="POST" id="ajax_form">
+                   <form action="https://test-telega.piastrix24.com/api/get_data" class="pay" method="POST" id="ajax_form" onsubmit="sendAjaxForm">
                        <div class="pay_input">
                             <label for="">Ваш E-mail</label>
-                            <input type="email" name="email" enctype="multipart/form-data">
+                            <input type="email" required name="email" enctype="multipart/form-data">
                        </div>
                        
                        <button class="m-btn" id="btn">Оплатить</button>
@@ -88,11 +88,27 @@
                 <a href="https://en.wikipedia.org/wiki/Hyperlink" class="footer_contacts">
                     Контакты
                 </a>
+                <div class="footer_img-positions">
+                        <a href="#" class="footer_img">
+                            <img src="img/visa.png" alt="visa">
+                        </a>
+                        <a href="#" class="footer_img">
+                            <img src="img/masterCard.png" alt="visa">
+                        </a>
+                        <a href="#" class="footer_img">
+                            <img src="img/pciDss.png" alt="visa">
+                        </a>
+                </div>
+                <div class="language">
+                    <a href="#" >English</a>
+                    <div class="language_separator"></div>
+                    <a href="#" class="active">Русский</a>
+                </div>
             </div>
         </div>
     </footer>
     
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="Ajax.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

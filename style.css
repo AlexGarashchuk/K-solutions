@@ -49,12 +49,15 @@ header{
 .header_logo{
     height: 100%;
     margin-left: -60px;
+    display: flex;
+    align-items: center;
 }
 
 @media(max-width: 620px){
     .header_logo{
         margin-left: 0;
         max-width: 150px;
+        min-width: 100px;;
     }
 }
 .header_logo img{
@@ -77,6 +80,12 @@ header{
     display: flex;
     align-items: center;
     letter-spacing: 1px;
+}
+
+@media(max-width: 620px){
+    .support{
+        font-size: 0.8em;
+    }
 }
 
 .support img{
@@ -105,6 +114,13 @@ header{
     display: flex;
     align-items: center;
     padding: 10px 0;
+}
+
+@media(max-width: 620px){
+    .language{
+       padding: 5px 0;
+       font-size: 0.8em;
+    }
 }
 
 
@@ -176,6 +192,12 @@ box-shadow: -3px 1px 13px -2px #000000;
     margin-bottom: 100px;
 }
 
+@media(max-width: 620px){
+    .method{
+        margin-bottom: 50px;
+    } 
+}
+
 .method_content{
     display: flex;
     flex-wrap: wrap;
@@ -183,6 +205,11 @@ box-shadow: -3px 1px 13px -2px #000000;
     margin-top: 70px;
 }
 
+@media(max-width: 620px){
+    .method_content{
+        margin-top: 30px;
+    } 
+}
 
 
 .method_content_block{
@@ -227,14 +254,64 @@ footer{
 
 .footer{
     padding: 15px 0;
-height: 77px;
-display: flex;
-align-items: center;
+    height: 77px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+@media(max-width: 620px){
+    .footer{
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.footer .language a{
+    color: #7d7d7f;
+    transition: 0.5s all;
+} 
+
+.footer .language a:hover{
+    color: #11b6f6;
+} 
 
 .footer_contacts{
     text-transform: uppercase;
     color: #7d7d7f;
+    transition: 0.5s all;
+}
+
+.footer_contacts:hover{
+    
+    color: #11b6f6;
+}
+
+.footer_img-positions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    height: 100%;
+}
+
+.footer_img{
+    height: 50px;
+    padding: 10px;
+    opacity: .7;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.footer_img:hover{
+    opacity: 1;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+.footer_img img{
+    max-height: 100%;
 }
 
 
